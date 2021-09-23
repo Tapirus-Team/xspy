@@ -1,0 +1,6 @@
+[submodule "msvc/myprops"]
+	path = msvc/myprops
+	url = https://github.com/MiroKaku/myprops.git
+[submodule "base"]
+	path = base
+	url = https://github.com/Tapirus-Team/libbase.git
