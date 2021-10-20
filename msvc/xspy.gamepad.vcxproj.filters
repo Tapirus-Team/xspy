@@ -44,7 +44,7 @@
     <ClInclude Include="..\gamepad\rawinput.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\hookhelper.h">
+    <ClInclude Include="..\defhook.h">
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="..\gamepad\vmt.h">

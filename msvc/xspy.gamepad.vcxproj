@@ -40,7 +40,7 @@
     <ClInclude Include="..\gamepad\rawinput.h" />
     <ClInclude Include="..\gamepad\vmt.h" />
     <ClInclude Include="..\gamepad\xinput.h" />
-    <ClInclude Include="..\hookhelper.h" />
+    <ClInclude Include="..\defhook.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

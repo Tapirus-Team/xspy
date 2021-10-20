@@ -18,11 +18,14 @@
 // Global define
 
 // System Header
+#define NOMINMAX
 #define WIN32_LEAN_AND_MEAN
-#include <base/third/MINT/MINT.h>
-#include <base/include/libbase.h>
+#define UMDF_USING_NTSTATUS
+#include <windows.h>
+#include <windowsx.h>
+#include <winioctl.h>
+#include <ntstatus.h>
 #include <strsafe.h>
-#include <wrl.h>
 
 // C/C++ Header
 #include <type_traits>
@@ -43,13 +46,12 @@
 #include <spdlog/sinks/stdout_color_sinks.h>
 #include <spdlog/sinks/rotating_file_sink.h>
 #include <detours/detours.h>
+#include <base/include/libbase.h>
 #pragma warning(pop)
 
-#include "hookhelper.h"
+#include "defhook.h"
 
 // Global Var/Fun define
-using namespace Microsoft;
-
 EXTERN_C IMAGE_DOS_HEADER __ImageBase;
 #define HINST_THISCOMPONENT ((HINSTANCE)&__ImageBase)
 
