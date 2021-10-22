@@ -107,7 +107,7 @@ namespace Main
         if (DetourIsHelperProcess())
             return TRUE;
 
-        if (DLL_PROCESS_ATTACH)
+        if (Reason == DLL_PROCESS_ATTACH)
             DetourRestoreAfterWith();
 
         switch (Reason)
