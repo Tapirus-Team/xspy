@@ -22,12 +22,17 @@ HRESULT Launcher(
         auto DllPath = base::stdext::fs::module_path().parent_path()
             .append(DllName);
 
+        if (!Args.empty())
+        {
+            Application.append(1, L' ').append(Args);
+        }
+
         STARTUPINFOW StartupArgs = { sizeof(STARTUPINFOW) };
         PROCESS_INFORMATION ProcessInformation = { nullptr };
 
         if (!DetourCreateProcessWithDllExW(
             nullptr,
-            Application.append(Args).data(),
+            Application.data(),
             nullptr,
             nullptr,
             FALSE,

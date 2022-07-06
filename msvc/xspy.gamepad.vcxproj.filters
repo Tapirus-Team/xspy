@@ -24,12 +24,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\universal.inl">
-      <Filter>src</Filter>
-    </None>
     <None Include="..\gamepad\module.def">
       <Filter>src</Filter>
     </None>
+    <None Include="..\universal.inl" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\gamepad\multimedia.h">
